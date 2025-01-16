@@ -33,7 +33,7 @@
 
 /* Hamburger Icon */
 .hamburger {
-  display: none;
+  display: none; /* Akan muncul pada layar kecil */
   flex-direction: column;
   cursor: pointer;
   gap: 4px;
@@ -51,25 +51,9 @@
   list-style: none;
 }
 
-.nav-links li {
-  margin: 0 10px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #ff6f61;
-}
-
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
   .hamburger {
-    display: flex;
+    display: flex; /* Munculkan hamburger pada layar kecil */
   }
 
   .nav-links {
@@ -85,7 +69,7 @@
   }
 
   .nav-links.active {
-    display: flex;
+    display: flex; /* Tampilkan nav-links jika active */
   }
 
   .nav-links li {
